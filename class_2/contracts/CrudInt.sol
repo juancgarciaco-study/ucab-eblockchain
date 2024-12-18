@@ -18,10 +18,10 @@ contract CrudInt {
     function Create(uint256 value)
         public
         valueRequired(value)
-        returns (bool)
+        returns (uint256)
     {
         crudValue = value;
-        return true;
+        return crudValue;        
     }
 
     // READ
